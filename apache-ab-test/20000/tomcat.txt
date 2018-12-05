@@ -1,0 +1,54 @@
+$ ./ab -n 20000 -c 1000 http://localhost:52267/getschool/12345678
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 2000 requests
+Completed 4000 requests
+Completed 6000 requests
+Completed 8000 requests
+Completed 10000 requests
+Completed 12000 requests
+Completed 14000 requests
+Completed 16000 requests
+Completed 18000 requests
+Completed 20000 requests
+
+
+Server Software:
+Server Hostname:        localhost
+Server Port:            52267
+
+Document Path:          /getschool/12345678
+Document Length:        2069 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   19.104 seconds
+Complete requests:      20000
+Failed requests:        0
+Total transferred:      43760000 bytes
+HTML transferred:       41380000 bytes
+Requests per second:    1046.92 [#/sec] (mean)
+Time per request:       955.187 [ms] (mean)
+Time per request:       0.955 [ms] (mean, across all concurrent requests)
+Transfer rate:          2236.96 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1  12.9      0     645
+Processing:   119  937 391.0   1019    2998
+Waiting:        3  622 395.4    513    2976
+Total:        119  937 391.2   1020    2998
+
+Percentage of the requests served within a certain time (ms)
+  50%   1020
+  66%   1155
+  75%   1183
+  80%   1222
+  90%   1345
+  95%   1660
+  98%   1816
+  99%   1854
+ 100%   2998 (longest request)
+Finished 20000 requests

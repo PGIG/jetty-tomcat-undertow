@@ -1,0 +1,32 @@
+jetty
+./ab -n 10000 -c 1000 http://localhost:52355/getschool/12345678
+
+tomcat
+./ab -n 10000 -c 1000 http://localhost:52267/getschool/12345678
+
+undertow
+./ab -n 10000 -c 1000 http://localhost:52401/getschool/12345678
+
+
+---------------------------------------------------------------
+
+jetty
+./ab -n 20000 -c 1000 http://localhost:52355/getschool/12345678
+
+tomcat
+./ab -n 20000 -c 1000 http://localhost:52267/getschool/12345678
+
+undertow
+./ab -n 20000 -c 1000 http://localhost:52401/getschool/12345678
+
+
+---------------------------------------------------------------
+
+jetty
+./ab -n 40000 -c 1000 http://localhost:52355/getschool/12345678
+
+tomcat
+./ab -n 40000 -c 1000 http://localhost:52267/getschool/12345678
+
+undertow
+./ab -n 40000 -c 1000 http://localhost:52401/getschool/12345678
